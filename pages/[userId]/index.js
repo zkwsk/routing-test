@@ -1,15 +1,15 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 
-function TextStar() {
+function User() {
   const router = useRouter()
   console.log('router', router)
   console.log('inside index')
   return (
     <div>
-      Celebrity
+      User page is here
     </div>
   )
 }
 
-export default TextStar
+export default User
