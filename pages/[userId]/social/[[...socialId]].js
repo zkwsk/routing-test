@@ -8,4 +8,18 @@ function Social() {
   )
 }
 
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
+  }
+}
+export async function getStaticProps(props) {
+  return {
+    props: {
+      test: 'test',
+    }
+  }
+}
+
 export default Social
