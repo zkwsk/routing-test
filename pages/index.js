@@ -7,7 +7,7 @@ export default function Home() {
         <Link href="/user-123/social">
           <a>/user-123/social</a>
         </Link>{" "}
-        doesn't work when it should.
+        doesn&apos;t work when it should.
       </div>
       <div>
         <Link href="/user-123/social/social-123">
