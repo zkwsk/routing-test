@@ -11,7 +11,7 @@ function Social() {
 export async function getStaticPaths() {
   return {
     paths: [],
-    fallback: true,
+    fallback: process.env.ENABLE_ISR === "blocking" ? 'blocking' : process.env.ENABLE_ISR !== "false" ? true : false,
   }
 }
 export async function getStaticProps(props) {
